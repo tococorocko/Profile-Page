@@ -1,34 +1,20 @@
-<div class="navbar-wagon">
+<div class="navbar-container">
   <!-- Logo -->
-  <%= link_to "LK", ""%>
+  <% link_to "" do %>
+  <%= image_tag "my_profile_pic.jpeg", alt: "Profle Pic", class:"avatar"%>
+  <% end %>
 
 
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <div class="navbar-wagon-right d-none d-xs-none d-sm-block">
 
-    <%= link_to "About Me", "", class:"navbar-wagon-item navbar-wagon-link"%>
-    <%= link_to "Education", "", class:"navbar-wagon-item navbar-wagon-link"%>
-    <%= link_to "Experience", "", class:"navbar-wagon-item navbar-wagon-link"%>
-    <%= link_to "Skills", "", class:"navbar-wagon-item navbar-wagon-link"%>
-    <%= link_to "Portfolio", "", class:"navbar-wagon-item navbar-wagon-link"%>
+    <%= link_to "About Me", "#about", class:"navbar-wagon-item navbar-wagon-link"%>
+    <%= link_to "Education", "#education", class:"navbar-wagon-item navbar-wagon-link"%>
+    <%= link_to "Experience", "#experience", class:"navbar-wagon-item navbar-wagon-link"%>
+    <%= link_to "Skills", "#skills", class:"navbar-wagon-item navbar-wagon-link"%>
+    <%= link_to "Portfolio", "#projects", class:"navbar-wagon-item navbar-wagon-link"%>
 
     <!-- Profile picture with dropdown list -->
-    <div class="navbar-wagon-item">
-        <%= image_tag "my_profile_pic.jpeg", alt: "Profile Pic", class:"avatar dropdown-toggle", id:"navbar-wagon-menu"%>
-    </div>
   </div>
 
-  <!-- Dropdown appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><%= link_to "About Me", "", class:"navbar-wagon-item navbar-wagon-link"%></li>
-        <li><%= link_to "Education", "", class:"navbar-wagon-item navbar-wagon-link"%></li>
-        <li><%= link_to "Experience", "", class:"navbar-wagon-item navbar-wagon-link"%></li>
-        <li><%= link_to "Skills", "", class:"navbar-wagon-item navbar-wagon-link"%></li>
-        <li><%= link_to "Portfolio", "", class:"navbar-wagon-item navbar-wagon-link"%></li>
-      </ul>
-    </div>
-  </div>
 </div>

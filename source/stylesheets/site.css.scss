@@ -57,6 +57,10 @@ i {
   margin: auto; /* This automatically sets left/right margins */
 }
 
+// .container > :first-child {
+//   margin-top: 90px;
+// }
+
 @media (max-width: 960px) {
    /*For a screen < 960px, this CSS will be read*/
   .container {
@@ -148,12 +152,9 @@ i {
 
 
 
-
-
-
 // css for navbar
 /* Main navbar */
-.navbar-wagon {
+.navbar-container {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
   transition: all 0.3s ease;
@@ -164,13 +165,8 @@ i {
   justify-content: space-between;
 }
 
-/* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
-}
-
 /* User Avatar */
-.navbar-wagon .avatar {
+  .navbar-container .avatar {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -198,35 +194,3 @@ i {
   color: #EED4B2;
   text-decoration: none;
 }
-
-/* Dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
-.navbar-wagon-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #B8BACF !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: #EED4B2 !important;
-}
-.navbar-wagon-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
-}
-
