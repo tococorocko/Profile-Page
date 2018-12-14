@@ -1,55 +1,57 @@
 // Specific CSS for your home-page
 body {
   background-color: #EBEBEB;
-  color: #B8BACF;
-  font-family: 'Open Sans', sans-serif;
+  color: #83BCFF;
+  font-family: 'Anonymous Pro', monospace;
   font-weight: lighter;
   font-size: 15px;
   line-height: 1.6em;
 }
 
 h1 {
-  color: #999AC6;
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
+  color: #83BCFF;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'B612 Mono', monospace;
+  margin-bottom: 15px;
 }
 
 h2 {
-  font-weight: normal;
-  color: #B8BACF;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px 0;
+  font-weight: bolder;
+  color: #3B413C;
+  font-size: 24px;
+  font-family: 'B612 Mono', monospace;
+  margin: 20px 0;
 }
 
 h3 {
   font-weight: normal;
-  color: #B8BACF;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-/*  text-align: left;
-*/  margin: 10px 0;
+  color: #3B413C;
+  font-size: 14px;
+  font-family: 'B612 Mono', monospace;
+  margin-bottom: 20px;
 }
 
 p {
-    text-align: justify;
+    color: #3B413C;
+    text-align: center;
     opacity: 0.8;
 }
 
 a {
   text-decoration: none;
-  color: #616668;
+  color: #3B413C;
 }
 
 a:hover {
   text-decoration:none;
-  color: #EED4B2;
+  color: #80FFE8;
 }
 
 i {
   text-align: center;
-  color: #B8BACF;
-  font-size: 40px;
+  color: #97D2FB;
+  font-size: 30px;
 }
 
 .container {
@@ -87,10 +89,6 @@ i {
   margin: 15px 0;
 }
 
-.welcome-description {
-  text-align: center;
-  font-weight: bolder;
-}
 
 .white-card {
   border-radius: 3px;
@@ -101,15 +99,17 @@ i {
 }
 
 
-.btn-yellow {
-  background-color: #EED4B2;
+.btn-blue {
+  background-color: #97D2FB;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
+  margin: 15px;
 }
 
-.btn-yellow:hover {
-  color: #616668;
+.btn-blue:hover {
+  background-color: #80FFE8;
+  color: #3B413C;
 }
 
 .pic-size {
@@ -125,7 +125,7 @@ i {
 
 .pic-size-big {
   height: 250px;
-  margin: 5px 5px 5px 0;
+  margin: 5px 5px 10px 0;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
@@ -146,7 +146,7 @@ i {
 
 
 .list-inline li i {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 
@@ -162,7 +162,7 @@ i {
   padding: 0px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* User Avatar */
@@ -187,10 +187,11 @@ i {
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #B8BACF;
+  font-weight: bolder;
+  color: #83BCFF;
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #EED4B2;
+  color: #80FFE8;
   text-decoration: none;
 }

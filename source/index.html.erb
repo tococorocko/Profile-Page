@@ -4,13 +4,16 @@
     <%= image_tag "my_profile_pic.jpeg", alt: "Profile Pic Lucca Kaiser", id:"profile" %>
     <h1>Lucca Kaiser</h1>
       <h2>Developer</h2>
-        <p class="welcome-description">Welcome to my profile page! I recently graduated from Le Wagon Berlin. I found my true passion in coding.Feel free to contact me.</p>
-        <a target="_blank" rel="noopener noreferrer" href = "mailto: luccakaiser@gmail.com" class="btn btn-yellow">Contact Me!</a>
+        <p>Welcome to my profile page!</p>
+        <p>I am a recent graduate from Le Wagon Berlin, where I found my true passion in coding.</p>
+        <a target="_blank" rel="noopener noreferrer" href = "mailto: luccakaiser@gmail.com" class="btn btn-blue">Contact Me!</a>
   </div>
 
 
     <div class="white-card top text-center">
         <h2 id="about">About me</h2>
+        <p>Originally from Switzerland, moved to Berlin in Spring of 2017. Love to play and watch football. Love music and music festivals. Love video games.
+        </p>
         <div class="row">
           <div class="col-12 col-md-4">
             <i class="fas fa-birthday-cake"></i>
@@ -22,13 +25,11 @@
           </div>
           <div class="col-12 col-md-4">
             <i class="fas fa-address-card"></i>
-            <h3>10247 Berlin</h3>
+            <h3>Berlin</h3>
           </div>
-        <h2>Interests</h2>
-        <div class="row">
           <div class="col-16 col-md-4">
             <i class="fas fa-futbol"></i>
-            <h3>Football/Sport</h3>
+            <h3>Football</h3>
           </div>
           <div class="col-16 col-md-4">
             <i class="fab fa-spotify"></i>
@@ -38,7 +39,6 @@
             <i class="fas fa-gamepad"></i>
             <h3>Video Games</h3>
           </div>
-        </div>
 
         </div>
     </div>
@@ -47,12 +47,36 @@
 
     <div class="white-card top text-center">
       <h2 id="education">Education</h2>
-      <i class="fas fa-graduation-cap"></i>
+      <p>Recently graduated from Le Wagon Berlin as a FullStack developer.
+      </p>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <% link_to "https://www.lewagon.com/" do %>
+        <%= image_tag "le-wagon.png", alt: "Le Wagon", class:"pic-size-logo" %>
+          <!-- <h3>Boostability</h3> -->
+          <p class="job-description">FullStack Developer</p>
+          <p class="job-description">2018</p>
+        <% end %>
+      </div>
+      <div class="col-12 col-md-6">
+        <% link_to 'https://www.fhsg.ch/' do %>
+          <%= image_tag "fhsg.jpeg", alt: "Fachhochschule St.Gallen", class:"pic-size-logo"  %>
+          <!-- <h3>DLS Lehrmittel AG</h3> -->
+          <p class="job-description">Bsc in business administration</p>
+          <p class="job-description">2010-2014</p>
+        <% end %>
+      </div>
+    </div>
+
     </div>
 
     <div class="white-card top text-center">
         <h2 id="experience">Experience</h2>
-        <i class="fas fa-briefcase"></i>
+        <p>
+        More than 6 years of experience as an (seo) account manager. And as a former professional football player I am a proven team player.
+        </p>
+        <p>
+        I am motivated and inspired to make my mark in web development to create beautiful and useful digital products.</p>
       <div class="row">
         <div class="col-12 col-md-6">
           <% link_to "https://www.boostability.com/" do %>
@@ -74,8 +98,10 @@
     </div>
 
   <div class="white-card text-center">
-    <h2 id="skills">Programming Languages & Skills</h2>
-    <i class="fas fa-laptop"></i>
+    <h2 id="skills">Skills</h2>
+    <p>
+    A few of my technical skills:
+    </p>
     <div class="row">
       <div class="col-6 col-md-4">
         <%= image_tag "ruby.png", alt: "Ruby", class:"pic-size" %>
@@ -100,64 +126,37 @@
 
   <div class="white-card text-center">
     <h2 id="projects">Notable Projects</h2>
-    <i class="fas fa-project-diagram"></i>
+    <p>
+    A few of my projects:
+    </p>
       <div class="row">
       <div class="col-12 col-md-4">
         <% link_to 'https://www.digital-pub.live/' do%>
           <h3 class="text-center">Digital Pub</h3>
+          <p>Chats for football fans. Built with Ruby on Rails.
+          </p>
           <%= image_tag "digital-pub.png", alt: "digital-pub", class:"pic-size-big" %>
         <% end %>
       </div>
       <div class="col-12 col-md-4">
         <% link_to 'https://need-a-cocktail.herokuapp.com/' do %>
             <h3 class="text-center">Need a Cocktail</h3>
+            <p>Website for cocktails. Built with Middleman.
+            </p>
             <%= image_tag "need-a-cocktail.png", alt: "need-a-cocktail", class:"pic-size-big" %>
         <% end %>
       </div>
       <div class="col-12 col-md-4">
         <% link_to 'https://sportify-tococorocko.herokuapp.com/' do%>
           <h3 class="text-center">Sportify</h3>
+          <p>Find sports fields. Built with Ruby on Rails.
+          </p>
           <%= image_tag "sportify.png", alt: "Sportify", class:"pic-size-big" %>
         <% end %>
       </div>
     </div>
 
   </div>
-
-
-
-<!--       <div class="white-card text-center">
-    <h2>My favourite tv shows</h2>
-    <table class="table-class">
-      <tr>
-        <td>
-          <img src="images/breaking_bad.jpeg" alt="Breaking Bad" class="pic-size" >
-        </td>
-        <td>
-          <h3>Breaking Bad</h3>
-            <p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="images/game_of_thrones.jpg" alt="Game of Thrones" class="pic-size">
-        </td>
-        <td>
-          <h3>Game of Thrones</h3>
-              <p>Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="images/modern_family.jpeg" alt="Modern Family" class="pic-size">
-        </td>
-        <td>
-          <h3>Modern Family</h3>
-            <p>Three different, but related families face trials and tribulations in their own uniquely comedic ways.</p>
-        </td>
-      </tr>
-    </table>
-  </div> -->
 
   <div class="white-card text-center">
     <ul class="list-inline">
@@ -186,27 +185,6 @@
         </a>
       </li>
     </ul>
-    © Lucca Kaiser
+    © Lucca Kaiser. All rights reserved.
   </div>
-<!--       <div class="white-card text-right">
-    <h2>About this page</h2>
-      <p> ©Lucca Kaiser</p>
-      <ul class="list-inline">
-        <li>
-          <a href="">
-            <i class="fas fa-heart"></i>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="fa fa-share"></i>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="fa fa-star"></i>
-          </a>
-        </li>
-      </ul>
-    </div> -->
 </div>
