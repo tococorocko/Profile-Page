@@ -173,25 +173,25 @@ i {
 }
 
 /* Right section */
-.navbar-wagon-right {
+.navbar-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* Basic navbar item */
-.navbar-wagon-item {
+.navbar-item {
   cursor: pointer;
   padding: 0 20px;
 }
 
 /* Navbar link */
-.navbar-wagon-link {
+.navbar-link {
   font-weight: bolder;
   color: #83BCFF;
   font-size: 14px;
 }
-.navbar-wagon-link:hover {
+.navbar-link:hover {
   color: #80FFE8;
   text-decoration: none;
 }
